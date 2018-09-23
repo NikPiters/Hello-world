@@ -1,0 +1,77 @@
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Запчасти</title>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+ <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+<br>
+<div class="container">
+ <div class="row">
+  <!-- Таб панель -->
+   <div role="tabpanel" class="tab-pane fade in active" id="example2-tab1">
+    <div id="example_wrapper" class="dataTables_wrapper">
+     <table id="example" class="display dataTable" style="width: 100%;" role="grid" aria-describedby="example_info">
+     <thead>
+     <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Наименование запчасти" style="width: 134px;">Наименование</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Необходимость при сборке" style="width: 208px;">Необходимость</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Количество на складе" style="width: 41px;">Количество</th></tr>
+     </thead>
+     <tbody>
+     <tr role="row" class="odd">
+      <td class="sorting_1">Материнская плата</td>
+      <td>Да</td>
+      <td>1</td>
+     </tr><tr role="row" class="even">
+      <td class="sorting_1">Звуковая карта</td>
+      <td>Нет</td>
+      <td>1</td>
+     </tr><tr role="row" class="odd">
+      <td class="sorting_1">Процессор</td>
+      <td>Да</td>
+      <td>1</td>
+     </tr><tr role="row" class="even">
+      <td class="sorting_1">Подсветка корпуса</td>
+      <td>Нет</td>
+      <td>1</td>
+     </tr><tr role="row" class="odd">
+      <td class="sorting_1">HDD диск</td>
+      <td>Нет</td>
+      <td>1</td>
+     </tr><tr role="row" class="even">
+      <td class="sorting_1">Корпус</td>
+      <td>Да</td>
+      <td>1</td>
+     </tr><tr role="row" class="odd">
+      <td class="sorting_1">Память</td>
+      <td>Да</td>
+      <td>1</td>
+     </tr><tr role="row" class="even">
+      <td class="sorting_1">SSD диск</td>
+      <td>Нет</td>
+      <td>1</td>
+     </tr><tr role="row" class="odd">
+      <td class="sorting_1">Видеокарта</td>
+      <td>Нет</td>
+      <td>1</td>
+     </tr>
+     </tbody>
+    </table>
+    </div>
+  </div>
+ </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    } );
+</script>
+
+</body>
+</html>
